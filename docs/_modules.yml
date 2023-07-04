@@ -2,8 +2,8 @@ config:
     renderer: asciidoc
 
 modules:
-  about:
-    name: Preface
+  # about:
+  #   name: Preface
   dgin10mins:
     name: DataGrid in 10 mins
   settingup:

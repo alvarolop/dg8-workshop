@@ -19,7 +19,7 @@ vars:
 
 modules:
   activate:
-  # - about
+  - about
   - settingup
   - dgin10mins
   - exercises
