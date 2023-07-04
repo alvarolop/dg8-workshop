@@ -2,7 +2,7 @@ id: "dg8-workshop"
 name: "Red Hat Data Grid - From zero to hero"
 
 content:
-  url: https://raw.githubusercontent.com/sshaaf/dg8-workshop.git/development
+  url: https://raw.githubusercontent.com/alvarolop/dg8-workshop.git/development
 
 vars:
   ROUTE_SUBDOMAIN:
@@ -19,7 +19,7 @@ vars:
 
 modules:
   activate:
-  - about
+  # - about
   - settingup
   - dgin10mins
   - exercises
