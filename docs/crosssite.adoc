@@ -159,15 +159,15 @@ oc project {{ USER_ID }}-cache2
 # get the console url for site LON
 echo "https://$(oc get services | grep example-lon-external | awk '{ print $4 }'):11222"
 
-# get the password for user developer to login to the console
+# get the password to login to the console with the user developer.
 echo "$(oc get secret example-lon-generated-secret -o jsonpath="{.data.identities\.yaml}" | base64 --decode | grep password | awk '{ print $2 }' )"
 ----
 
-Perfect! Now that we have the details let's open up the console and set up the cross-site caches. 
+Perfect! Now that we have opened the URL, we log in with the user developer and the obtained password. Once done, the console should be up and we will set up the cross-site caches. 
 
 image::dg8_createcache_console.png[Create cache, 700]
 
-After pressing `Create cache` you will see the following form. In the field `Provide Cache configuration` add the following XML and press create:
+After pressing `Create cache` you will see the following form. Select `Add cache configuration` and add the following XML and press create:
 
 image::dg8_createcacheform_console.png[Create cache, 700]
 
